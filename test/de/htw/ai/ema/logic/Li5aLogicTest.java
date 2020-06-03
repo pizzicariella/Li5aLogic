@@ -64,6 +64,7 @@ public class Li5aLogicTest {
         assertTrue("p2 didn't receive the right cards", playersAfterPassing.get(1).getHand().getCards().contains(c1));
     }
 
+    //TODO implement all tests
     @Test
     public void testFindStartPlayerForGameRound(){
         fail("Not yet implemented");

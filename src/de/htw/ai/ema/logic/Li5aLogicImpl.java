@@ -4,10 +4,8 @@ import de.htw.ai.ema.model.Card;
 import de.htw.ai.ema.model.Deck;
 import de.htw.ai.ema.model.Hand;
 import de.htw.ai.ema.model.Player;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
-import java.util.Stack;
+
+import java.util.*;
 
 public class Li5aLogicImpl implements Li5aLogic{
 
@@ -42,6 +40,7 @@ public class Li5aLogicImpl implements Li5aLogic{
         }
     }
 
+    //TODO implement all methods
     @Override
     public List<Player> passCards(List<Card> SelectedCards, Player passingPlayer, List<Player> allPlayers) {
         return null;
@@ -53,7 +52,7 @@ public class Li5aLogicImpl implements Li5aLogic{
     }
 
     @Override
-    public Player findStartPlayerCycle(List<Player> players) {
+    public Player findStartPlayerCycle(Map<String, Player> players) {
         return null;
     }
 

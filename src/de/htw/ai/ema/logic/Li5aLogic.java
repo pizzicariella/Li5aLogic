@@ -5,6 +5,7 @@ import de.htw.ai.ema.model.Deck;
 import de.htw.ai.ema.model.Hand;
 import de.htw.ai.ema.model.Player;
 import java.util.List;
+import java.util.Map;
 import java.util.Stack;
 
 public interface Li5aLogic {
@@ -40,7 +41,7 @@ public interface Li5aLogic {
      * @param players - all players in game
      * @return - the start player
      */
-    public Player findStartPlayerCycle(List<Player> players);
+    public Player findStartPlayerCycle(Map<String, Player> players);
 
     /**
      * This method finds Cards in List which are allowed to played. If startPlayer is true this will be the whole List.
@@ -60,6 +61,7 @@ public interface Li5aLogic {
      * @return
      */
     public Player addCardsToAccount(List<Player> players, Stack stack);
+
 
     /**
      * This method calculates the score of each player by adding individual scores of cards in account of each player
